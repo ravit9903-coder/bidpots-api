@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
@@ -6,6 +6,6 @@ COPY . .
 
 RUN ./mvnw clean package -DskipTests
 
-EXPOSE 8080
+EXPOSE 8082
 
-CMD ["java","-jar","target/*.jar"]
+CMD ["java","-jar","target/*.jar"]]
