@@ -57,4 +57,6 @@ public class Ad {
     public void setEmail(String email) {
         this.email = email;
     }
+    @Column(length = 500)
+    private String imageUrl;
 }
